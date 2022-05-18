@@ -1,0 +1,131 @@
+/* Defining variables. */
+
+$primary-color: rgb(9, 117, 76);
+$secondry_color: rgb(230, 230, 230);
+$danger_color: #ff0000;
+$background_color: #fafafa;
+$border_color: #ffffff;
+$color_3: #bdbbbb;
+$font-family: sans-serif;
+
+/* 
+ * ---------------------------------------- *
+ * Name: 	Primary Styles Boilerplate      *
+ * Type: 	Boilerplate CSS                 *
+ * ---------------------------------------- *
+ */
+/* import normalise */
+@import "libs/normalise.css";
+* {
+	margin: 10px;
+}
+.head {
+	font-size: 3.75em;
+	position: relative;
+	color: $secondry_color;
+	font-family: $font-family;
+	padding-left: 50px;
+}
+.overlay {
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	color: $primary-color;
+	padding-top: 25px;
+	padding-left: 125px;
+	margin: 0;
+	top: 50px;
+	left: 130px;
+}
+.section {
+	margin: 0 auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-auto-rows: 3;
+	gap: 20px;
+	font-family: $font-family;
+	padding-top: 10px;
+	* {
+		box-sizing: border-box;
+	}
+}
+.card__image {
+	width: 100%;
+	height: 150px;
+	padding-bottom: 10px;
+	object-fit: cover;
+	display: block;
+}
+.card__content {
+	line-height: 1.5;
+	font-size: 0.9em;
+	padding: 15px;
+	background: $background_color;
+	border-right: 2px solid $border_color;
+	border-left: 2px solid $border_color;
+	height: 200px;
+	background: linear-gradient(to right, rgb(9, 117, 76) 4px, transparent 4px) 0 0, linear-gradient(to bottom, rgb(9, 117, 76) 4px, transparent 4px) 0 0;
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+}
+.card__info {
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: $border_color;
+	font-size: 0.8em;
+	i {
+		font-size: 0.9em;
+		margin-right: 8px;
+		color: $color_3;
+	}
+}
+.footer {
+	padding: 15px;
+}
+.small {
+	color: $danger_color;
+	font-weight: bold;
+}
+.card__link {
+	color: $danger_color;
+	text-decoration: none;
+	font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+	* {
+		margin: 1px;
+	}
+	.head {
+		font-size: 15px;
+		position: relative;
+		color: $secondry_color;
+		font-family: $font-family;
+		padding: 0em;
+	}
+	.overlay {
+		font-size: 5px;
+		position: static;
+		color: $primary-color;
+		margin: 0;
+		top: 50px;
+		left: 130px;
+	}
+	.card__content {
+		line-height: 1.5;
+		font-size: 0.9em;
+		padding: 15px;
+		background: $background_color;
+		border-right: 2px solid $border_color;
+		border-left: 2px solid $border_color;
+		height: 200px;
+	}
+	.footer {
+		padding: 15px;
+		background: linear-gradient(to right, rgb(9, 117, 76) 4px, transparent 4px) 0 100%, linear-gradient(to top, rgb(9, 117, 76) 4px, transparent 4px) 0 100%;
+		background-repeat: no-repeat;
+		background-size: 100px 100px;
+	}
+}

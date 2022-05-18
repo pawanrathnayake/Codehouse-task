@@ -1,0 +1,144 @@
+/* 
+ * ---------------------------------------- *
+ * Name: 	Primary Styles Boilerplate      *
+ * Type: 	Boilerplate CSS                 *
+ * ---------------------------------------- *
+ */
+/* import normalise */
+/* @import url(c:\Users\Pawan\Desktop\CH Sass\Assets\styles\libs\normalise.css); */
+* {
+  margin: 10px;
+}
+
+.head {
+  font-size: 3.75em;
+  position: relative;
+  color: #e6e6e6;
+  font-family: sans-serif;
+  padding-left: 50px;
+}
+
+.overlay {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  color: #09754c;
+  padding-top: 25px;
+  padding-left: 125px;
+  margin: 0;
+  top: 50px;
+  left: 130px;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 3;
+  gap: 20px;
+  font-family: sans-serif;
+  padding-top: 10px;
+}
+
+.section * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card__image {
+  width: 100%;
+  height: 150px;
+  padding-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.card__content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: #fafafa;
+  border-right: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  height: 200px;
+  background: linear-gradient(to right, #09754c 4px, transparent 4px) 0 0, linear-gradient(to bottom, #09754c 4px, transparent 4px) 0 0;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+}
+
+.card__info {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  font-size: 0.8em;
+}
+
+.card__info i {
+  font-size: 0.9em;
+  margin-right: 8px;
+  color: #bdbbbb;
+}
+
+.footer {
+  padding: 15px;
+}
+
+.small {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.card__link {
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 1px;
+  }
+  .head {
+    font-size: 15px;
+    position: relative;
+    color: #e6e6e6;
+    font-family: sans-serif;
+    padding: 0em;
+  }
+  .overlay {
+    font-size: 5px;
+    position: static;
+    color: #09754c;
+    margin: 0;
+    top: 50px;
+    left: 130px;
+  }
+  .card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    height: 200px;
+  }
+  .footer {
+    padding: 15px;
+    background: linear-gradient(to right, #09754c 4px, transparent 4px) 0 100%, linear-gradient(to top, #09754c 4px, transparent 4px) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
