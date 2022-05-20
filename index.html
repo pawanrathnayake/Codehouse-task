@@ -14,7 +14,7 @@
 
     <!-- stylesheet refs -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="Assets/styles/style.css"/>
+    <link rel="stylesheet" href="Assets/styles/style.css">
 
     <!-- conditional html5 helper -->
     <!--[if lt IE 9]>
@@ -24,76 +24,54 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
-    <div class="head">
-        <h1>You may also like</h1>
-        <h6 class='overlay'>YOU MAY ALSO LIKE ------</6>
-    </div>
+    <header class="header-main">
+      <h1 class="header-main__title">You may also like</h1>
+      <h6 class="header-main__sub">YOU MAY ALSO LIKE --------</h6>
+    </header>
+
     <div class="section">
+
       <div class="card">
-        <img class="card__image" src="./Assets/images/why-content-marketing-fails-hero.jpg" alt="">
+        <span class="card__img"><img class="card__image" src="./Assets/images/why-content-marketing-fails-hero.jpg" alt="picture of a stress employer"></span>
         <div class="card__content">
-          <small class="small">Marketing</small>
-          <h2>
-            10 Reasons why Content Marketing Fails
-          </h1>
-        </div>
-        <div class="card__info">
-          <div>
-            <i class="fas fa-clock">4 mins read</i>
-          </div>
-          <label>24 January 2022</label>
-        </div>
-        <div class="footer">
-            <div>
-                <a href="./" class="card__link">READ MORE...</a>
-              </div>
+          <small class="card__small">Marketing</small>
+          <p class="card__desc">10 Reasons why Content Marketing Fails</p>
+          <div class="card__info">
+             <i class="fas fa-clock">4 mins read</i>
+             <label>24 January 2022</label>
+            </div>
+          <a href="./" class="card__link card__link--active">READ MORE...</a>
         </div>
       </div>
+
       <div class="card">
-        <img class="card__image" src="./Assets/images/go-to-market-sitecore-ordercloud-hero.jpg" alt="">
+        <span class="card__img"><img class="card__image" src="./Assets/images/why-content-marketing-fails-hero.jpg" alt="picture of a stress employer"></span>
         <div class="card__content">
-            <small class="small">Marketing</small>
-            <h2>
-              The go-to Market Strategies Sitecore OrderCloud Supports
-            </h1>
-          </div>
-        <div class="card__info">
-          <div>
-            <i class="fas fa-clock">2 mins read</i>
-          </div>
-          <div>
-            <label>17 January 2022</label>
-          </div>
-        </div>
-        <div class="footer">
-            <div>
-                <a href="./" class="card__link">READ MORE...</a>
-              </div>
+          <small class="card__small">Marketing</small>
+          <p class="card__desc">The go-to Market Strategies Sitecore OrderCloud Supports</p>
+          <div class="card__info">
+             <i class="fas fa-clock">4 mins read</i>
+             <label>24 January 2022</label>
+            </div>
+          <a href="./" class="card__link card__link--active">READ MORE...</a>
         </div>
       </div>
+
       <div class="card">
-        <img class="card__image" src="./Assets/images/why-and-sitecore-deliver-a-better-user-experience-hero.jpg" alt="">
+        <span class="card__img"><img class="card__image" src="./Assets/images/why-content-marketing-fails-hero.jpg" alt="picture of a stress employer"></span>
         <div class="card__content">
-            <small class="small">Marketing</small>
-            <h2>
-              Why Codehouse & Sitecore Deliver a Better User Experience
-            </h1>
-          </div>
-        <div class="card__info">
-          <div>
-            <i class="fas fa-clock">4 mins read</i>
-          </div>
-          <div>
-            <label>28 July 2021</label>
-          </div>
-        </div>
-        <div class="footer">
-            <div>
-                <a href="./" class="card__link">READ MORE...</a>
-              </div>
+          <small class="card__small">Marketing</small>
+          <p class="card__desc">Why Codehouse & Sitecore Deliver a Better User Experience</p>
+          <div class="card__info">
+             <i class="fas fa-clock">4 mins read</i>
+             <label>24 January 2022</label>
+            </div>
+          <a href="./" class="card__link card__link--active">READ MORE...</a>
         </div>
       </div>
-    </div>    
+      
+    </div>
+
     <!-- page javascripts -->
     <script src="Assets/scripts/script.js" type="text/javascript"></script>
 </body>

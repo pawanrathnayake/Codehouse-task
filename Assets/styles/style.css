@@ -1,16 +1,4 @@
-/* 
- * ---------------------------------------- *
- * Name: 	Primary Styles Boilerplate      *
- * Type: 	Boilerplate CSS                 *
- * ---------------------------------------- *
- */
-/* import normalise */
-/* @import url(c:\Users\Pawan\Desktop\CH Sass\Assets\styles\libs\normalise.css); */
-* {
-  margin: 10px;
-}
-
-.head {
+.header-main {
   font-size: 3.75em;
   position: relative;
   color: #e6e6e6;
@@ -18,7 +6,7 @@
   padding-left: 50px;
 }
 
-.overlay {
+.header-main__sub {
   font-size: 20px;
   position: absolute;
   top: 0;
@@ -28,6 +16,24 @@
   margin: 0;
   top: 50px;
   left: 130px;
+}
+
+@media (max-width: 600px) {
+  .header-main .header-main {
+    font-size: 15px;
+    position: relative;
+    color: #e6e6e6;
+    font-family: sans-serif;
+    padding: 0em;
+  }
+  .header-main .header-main__sub {
+    font-size: 5px;
+    position: static;
+    color: #09754c;
+    margin: 0;
+    top: 50px;
+    left: 130px;
+  }
 }
 
 .section {
@@ -41,11 +47,6 @@
   gap: 20px;
   font-family: sans-serif;
   padding-top: 10px;
-}
-
-.section * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .card__image {
@@ -70,8 +71,23 @@
   background-size: 100px 100px;
 }
 
+@media (max-width: 600px) {
+  .card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    height: 200px;
+    background: linear-gradient(to right, #09754c 4px, transparent 4px) 0 100%, linear-gradient(to top, #09754c 4px, transparent 4px) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+  }
+}
+
 .card__info {
-  padding: 15px;
+  padding: 15px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,21 +97,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ffffff;
+  background: #fafafa;
   font-size: 0.8em;
 }
 
-.card__info i {
-  font-size: 0.9em;
-  margin-right: 8px;
-  color: #bdbbbb;
+.card__desc {
+  font-size: large;
+  font-weight: bold;
 }
 
-.footer {
-  padding: 15px;
-}
-
-.small {
+.card__small {
   color: #ff0000;
   font-weight: bold;
 }
@@ -104,41 +115,51 @@
   color: #ff0000;
   text-decoration: none;
   font-weight: bold;
+  padding: 15px;
 }
 
-@media only screen and (max-width: 600px) {
-  * {
-    margin: 1px;
-  }
-  .head {
-    font-size: 15px;
-    position: relative;
-    color: #e6e6e6;
-    font-family: sans-serif;
-    padding: 0em;
-  }
-  .overlay {
-    font-size: 5px;
-    position: static;
-    color: #09754c;
-    margin: 0;
-    top: 50px;
-    left: 130px;
-  }
-  .card__content {
-    line-height: 1.5;
-    font-size: 0.9em;
-    padding: 15px;
-    background: #fafafa;
-    border-right: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    height: 200px;
-  }
-  .footer {
-    padding: 15px;
-    background: linear-gradient(to right, #09754c 4px, transparent 4px) 0 100%, linear-gradient(to top, #09754c 4px, transparent 4px) 0 100%;
-    background-repeat: no-repeat;
-    background-size: 100px 100px;
-  }
+.card__link:hover {
+  color: #fafafa;
+  background: #ff0000;
 }
+
+/* @media (min-width: $layoutbreakpoint-small) {
+
+    .header-main {
+        font-size: 15px;
+        position: relative;
+        color: $secondry_color;
+        font-family: $secondry_color;
+        padding: 0em;
+
+        &__sub {
+            font-size: 5px;
+            position: static;
+            color: $primary-color;
+            margin: 0;
+            top: 50px;
+            left: 130px; 
+        }
+    }
+    
+    .card {
+        &__content {
+            line-height: 1.5;
+            font-size: 0.9em;
+            padding: 15px;
+            background: $background_color;
+            border-right: 2px solid $border_color;
+            border-left: 2px solid $border_color;
+            height: 200px;
+            background: 
+            linear-gradient(to right, $primary-color 4px, transparent 4px) 0 100%,
+            linear-gradient(to top, $primary-color 4px, transparent 4px) 0 100%;
+        
+          background-repeat: no-repeat;
+          background-size: 100px 100px;
+        }
+    }
+
+    
+} */
 /*# sourceMappingURL=style.css.map */
